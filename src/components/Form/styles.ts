@@ -40,8 +40,11 @@ export const Container = styled.div`
       padding: 1rem 6rem;
       text-transform: uppercase;
     }
+
+    
   
   }
+
 
   @media (max-width: 740px){
     form{
