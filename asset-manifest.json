@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/Portfolio_Dev/static/js/main.26ac0ed2.js",
+    "static/media/foto.png": "/Portfolio_Dev/static/media/foto.2f2038108fcbc58459e5.png",
+    "static/media/image.png": "/Portfolio_Dev/static/media/image.7a7e0fa2307b21f005ac.png",
+    "static/media/Currículo_Dev - Carlos_Eduardo.pdf": "/Portfolio_Dev/static/media/Currículo_Dev - Carlos_Eduardo.cd9810369c4fcd40be05.pdf",
+    "static/media/github.png": "/Portfolio_Dev/static/media/github.a855c3975c028d8069f5.png",
+    "static/media/instagram.png": "/Portfolio_Dev/static/media/instagram.75e0546a6b5abe4c0506.png",
+    "static/media/linkedin.png": "/Portfolio_Dev/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/sass-icon.svg": "/Portfolio_Dev/static/media/sass-icon.8351205a93eafac2e392b26acf7580e1.svg",
+    "static/media/mysql-icon.svg": "/Portfolio_Dev/static/media/mysql-icon.e5a509a5d3ca7443ae6ccf379181381d.svg",
+    "static/media/node-icon.svg": "/Portfolio_Dev/static/media/node-icon.3dc364b8e9beb3561620274aea4f0844.svg",
+    "static/media/typescript-icon.svg": "/Portfolio_Dev/static/media/typescript-icon.17d5e87eac2c9d1dc722ce1e0b60d5df.svg",
+    "static/media/bootstrap-icon.svg": "/Portfolio_Dev/static/media/bootstrap-icon.be374cc9bd654654918df2362bcfb240.svg",
+    "static/media/react-icon.svg": "/Portfolio_Dev/static/media/react-icon.f1484e295933af0e748d6a01b05a8361.svg",
+    "static/media/whatsIcon.svg": "/Portfolio_Dev/static/media/whatsIcon.b34495a24ad081f5e8abf9d3fd472282.svg",
+    "index.html": "/Portfolio_Dev/index.html",
+    "static/media/phone-icon.svg": "/Portfolio_Dev/static/media/phone-icon.91617f27ac814ef5f29b533ab3d256ec.svg",
+    "static/media/email-icon.svg": "/Portfolio_Dev/static/media/email-icon.a83578f914460e952501546655b76165.svg",
+    "static/media/python.svg": "/Portfolio_Dev/static/media/python.3ff24e41cd63cf1f16a09cc81ec73240.svg",
+    "static/media/html-icon.svg": "/Portfolio_Dev/static/media/html-icon.ebfc51e406097a90691ab82f1aa72db3.svg",
+    "static/media/css-icon.svg": "/Portfolio_Dev/static/media/css-icon.60a6c50d5a470990f63ee17a3bbd9178.svg",
+    "static/media/vscode-icon.svg": "/Portfolio_Dev/static/media/vscode-icon.3001bc63a45d488b7d2c332e4a2059ad.svg",
+    "static/media/git-icon.svg": "/Portfolio_Dev/static/media/git-icon.9f7fa229e389ee4a7b87cdad423136d9.svg",
+    "static/media/js-icon.svg": "/Portfolio_Dev/static/media/js-icon.ffcf56dc5498f7bbbec802191c740e5f.svg",
+    "static/media/vue-icon.svg": "/Portfolio_Dev/static/media/vue-icon.c286d2da48ffbf281f407b0c4c94271f.svg",
+    "static/media/github-icon.svg": "/Portfolio_Dev/static/media/github-icon.c48bfb2a53c47ee345a50672e3d24e07.svg",
+    "static/media/external-link-icon.svg": "/Portfolio_Dev/static/media/external-link-icon.97075d22dfb22a8c8d253b264e892b5f.svg",
+    "main.26ac0ed2.js.map": "/Portfolio_Dev/static/js/main.26ac0ed2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.26ac0ed2.js"
+  ]
+}
