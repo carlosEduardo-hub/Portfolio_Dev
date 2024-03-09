@@ -13,13 +13,12 @@ export const Container = styled.section`
   .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: auto ;
     gap: 2rem;
-    padding: 1rem;
-    overflow: hidden;
+    
 
     .project{
-      padding: 2rem 1.8rem;
+      padding: 1rem 1rem 1rem 1rem;
       background-color: #2b2b2b;
       border-radius: 1.2rem;
       transition: 0.25s;
@@ -27,6 +26,7 @@ export const Container = styled.section`
       flex-direction: column;
       height: 100%;
       color: #FFF;
+      
       &:hover{
         transform: translateY(-5px);
         background-color: var(--pink);
@@ -90,4 +90,5 @@ export const Container = styled.section`
       grid-template-columns: 1fr;
     }
   }
+  
 `

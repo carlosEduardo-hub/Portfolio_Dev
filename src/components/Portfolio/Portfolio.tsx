@@ -39,14 +39,18 @@ export function Portfolio() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={externalLinkIcon} alt="Visitar site" />
+                  <img src={externalLinkIcon} alt="Visitar site"  />
                 </a>
               </div>
             </header>
             <div className="body">
               <h3>Ping Pong Dev</h3>
               <p>
-              Este é um projeto que implementa um jogo clássico de pingue-pongue usando tecnologias web como HTML, CSS e JavaScript. O jogo foi construído com Canvas e APIs de animação de tela e quadro para criar uma experiência interativa e divertida.
+                Este é um projeto que implementa um jogo clássico de
+                pingue-pongue usando tecnologias web como HTML, CSS e
+                JavaScript. O jogo foi construído com Canvas e APIs de animação
+                de tela e quadro para criar uma experiência interativa e
+                divertida.
               </p>
             </div>
             <footer>
@@ -97,7 +101,8 @@ export function Portfolio() {
             <div className="body">
               <h3>Buscador de CEP</h3>
               <p>
-              Um buscador de CEP em React que utiliza a API do ViaCEP para buscar informações de endereços.
+                Um buscador de CEP em React que utiliza a API do ViaCEP para
+                buscar informações de endereços.
               </p>
             </div>
             <footer>
@@ -141,7 +146,9 @@ export function Portfolio() {
             <div className="body">
               <h3>Landing Page Advogado</h3>
               <p>
-              Este é um projeto de uma landing page criada para divulgar os serviços de um advogado. Foi desenvolvido utilizando HTML, CSS, JavaScript e Bootstrap.
+                Este é um projeto de uma landing page criada para divulgar os
+                serviços de um advogado. Foi desenvolvido utilizando HTML, CSS,
+                JavaScript e Bootstrap.
               </p>
             </div>
             <footer>
@@ -184,7 +191,14 @@ export function Portfolio() {
             </header>
             <div className="body">
               <h3>Interface de Listagem de Dados</h3>
-              <p>Este projeto é uma interface de listagem de dados desenvolvida utilizando React, Tailwind CSS e TypeScript. Ele permite listar dados obtidos através de uma API de apoio fornecida por um arquivo 'server.json'. O projeto inclui funcionalidades de exibição dos dados, criação de novos dados, filtragem e paginação.</p>
+              <p>
+                Este projeto é uma interface de listagem de dados desenvolvida
+                utilizando React, Tailwind CSS e TypeScript. Ele permite listar
+                dados obtidos através de uma API de apoio fornecida por um
+                arquivo 'server.json'. O projeto inclui funcionalidades de
+                exibição dos dados, criação de novos dados, filtragem e
+                paginação.
+              </p>
             </div>
             <footer>
               <ul className="tech-list">
@@ -235,8 +249,11 @@ export function Portfolio() {
             <div className="body">
               <h3>Sistema PPGCC</h3>
               <p>
-                Sistema feito para auxiliar o Programa de Pós-Graduação em Ciência da Computação na Universidade Federal do Piauí.
-              Este projeto oferece uma aplicação React com Dashboard,rotas e visualização de dados de arquivos Excel (xlsx, xls) em diferentes tipos de gráficos.
+                Sistema feito para auxiliar o Programa de Pós-Graduação em
+                Ciência da Computação na Universidade Federal do Piauí. Este
+                projeto oferece uma aplicação React com Dashboard,rotas e
+                visualização de dados de arquivos Excel (xlsx, xls) em
+                diferentes tipos de gráficos.
               </p>
             </div>
             <footer>
@@ -280,7 +297,12 @@ export function Portfolio() {
             <div className="body">
               <h3>Simulador de Validação e Transformação de Dados</h3>
               <p>
-              Este projeto visa demonstrar um exemplo prático de como implementar validação e transformação de dados em formulários utilizando React. Ele oferece um ambiente simulado para entender como as bibliotecas podem ser utilizadas para gerenciar dados de entrada do usuário, validar informações e realizar transformações conforme necessário.
+                Este projeto visa demonstrar um exemplo prático de como
+                implementar validação e transformação de dados em formulários
+                utilizando React. Ele oferece um ambiente simulado para entender
+                como as bibliotecas podem ser utilizadas para gerenciar dados de
+                entrada do usuário, validar informações e realizar
+                transformações conforme necessário.
               </p>
             </div>
             <footer>
