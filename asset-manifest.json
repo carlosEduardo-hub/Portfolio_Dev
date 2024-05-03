@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Portfolio_Dev/static/js/main.0fe1b926.js",
-    "static/media/foto.png": "/Portfolio_Dev/static/media/foto.2f2038108fcbc58459e5.png",
+    "main.js": "/Portfolio_Dev/static/js/main.b1711739.js",
+    "static/media/foto.png": "/Portfolio_Dev/static/media/foto.03a255f76f3ed1136de5.png",
     "static/media/image.png": "/Portfolio_Dev/static/media/image.7a7e0fa2307b21f005ac.png",
     "static/media/Currículo_Dev - Carlos_Eduardo.pdf": "/Portfolio_Dev/static/media/Currículo_Dev - Carlos_Eduardo.cd9810369c4fcd40be05.pdf",
     "static/media/github.png": "/Portfolio_Dev/static/media/github.a855c3975c028d8069f5.png",
@@ -26,9 +26,9 @@
     "static/media/vue-icon.svg": "/Portfolio_Dev/static/media/vue-icon.c286d2da48ffbf281f407b0c4c94271f.svg",
     "static/media/github-icon.svg": "/Portfolio_Dev/static/media/github-icon.c48bfb2a53c47ee345a50672e3d24e07.svg",
     "static/media/external-link-icon.svg": "/Portfolio_Dev/static/media/external-link-icon.97075d22dfb22a8c8d253b264e892b5f.svg",
-    "main.0fe1b926.js.map": "/Portfolio_Dev/static/js/main.0fe1b926.js.map"
+    "main.b1711739.js.map": "/Portfolio_Dev/static/js/main.b1711739.js.map"
   },
   "entrypoints": [
-    "static/js/main.0fe1b926.js"
+    "static/js/main.b1711739.js"
   ]
 }
