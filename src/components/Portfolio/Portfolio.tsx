@@ -39,7 +39,7 @@ export function Portfolio() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={externalLinkIcon} alt="Visitar site"  />
+                  <img src={externalLinkIcon} alt="Visitar site" />
                 </a>
               </div>
             </header>
@@ -312,6 +312,60 @@ export function Portfolio() {
                 <li>Typescript</li>
                 <li>Hook-Form</li>
                 <li>Zod</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#23ce6b "
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a
+                  href="https://github.com/carlosEduardo-hub/Notes_Expert"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubIcon} alt="Visitar site" />
+                </a>
+                <a
+                  href="https://notes-expert-nine.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={externalLinkIcon} alt="Visitar site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Notas Inteligentes com API para conversão de áudio</h3>
+              <p>
+                Este projeto é um aplicativo web construído com React,
+                TypeScript e Webpack Vite, que permite aos usuários criarem e
+                gerenciarem notas, com a funcionalidade adicional de gravação de
+                áudio para conversão de texto.
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>React</li>
+                <li>TailwindCss</li>
+                <li>Typescript</li>
+                <li>API Speech Recognition</li>
               </ul>
             </footer>
           </div>
