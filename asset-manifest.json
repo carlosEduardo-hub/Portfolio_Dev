@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/Portfolio_Dev/static/js/main.096dc699.js",
+    "main.js": "/Portfolio_Dev/static/js/main.2cd43f33.js",
     "static/media/foto.png": "/Portfolio_Dev/static/media/foto.03a255f76f3ed1136de5.png",
     "static/media/image.png": "/Portfolio_Dev/static/media/image.7a7e0fa2307b21f005ac.png",
-    "static/media/Currículo_Dev - Carlos_Eduardo.pdf": "/Portfolio_Dev/static/media/Currículo_Dev - Carlos_Eduardo.cd9810369c4fcd40be05.pdf",
+    "static/media/Currículo_Dev_2024.pdf": "/Portfolio_Dev/static/media/Currículo_Dev_2024.0872ac65f7683ae60fc9.pdf",
     "static/media/github.png": "/Portfolio_Dev/static/media/github.a855c3975c028d8069f5.png",
     "static/media/instagram.png": "/Portfolio_Dev/static/media/instagram.75e0546a6b5abe4c0506.png",
     "static/media/linkedin.png": "/Portfolio_Dev/static/media/linkedin.f249b38224ca41a0b909.png",
@@ -13,6 +13,7 @@
     "static/media/typescript-icon.svg": "/Portfolio_Dev/static/media/typescript-icon.17d5e87eac2c9d1dc722ce1e0b60d5df.svg",
     "static/media/bootstrap-icon.svg": "/Portfolio_Dev/static/media/bootstrap-icon.be374cc9bd654654918df2362bcfb240.svg",
     "static/media/react-icon.svg": "/Portfolio_Dev/static/media/react-icon.f1484e295933af0e748d6a01b05a8361.svg",
+    "static/media/next-icon.svg": "/Portfolio_Dev/static/media/next-icon.c15cc90ef3084ba7e4827e0cbc396ad6.svg",
     "static/media/whatsIcon.svg": "/Portfolio_Dev/static/media/whatsIcon.b34495a24ad081f5e8abf9d3fd472282.svg",
     "static/media/phone-icon.svg": "/Portfolio_Dev/static/media/phone-icon.91617f27ac814ef5f29b533ab3d256ec.svg",
     "static/media/email-icon.svg": "/Portfolio_Dev/static/media/email-icon.a83578f914460e952501546655b76165.svg",
@@ -25,10 +26,11 @@
     "static/media/js-icon.svg": "/Portfolio_Dev/static/media/js-icon.ffcf56dc5498f7bbbec802191c740e5f.svg",
     "static/media/vue-icon.svg": "/Portfolio_Dev/static/media/vue-icon.c286d2da48ffbf281f407b0c4c94271f.svg",
     "static/media/github-icon.svg": "/Portfolio_Dev/static/media/github-icon.c48bfb2a53c47ee345a50672e3d24e07.svg",
+    "static/media/tailwind-icon.svg": "/Portfolio_Dev/static/media/tailwind-icon.973c73e85d4daa24b257ba20298716c4.svg",
     "static/media/external-link-icon.svg": "/Portfolio_Dev/static/media/external-link-icon.97075d22dfb22a8c8d253b264e892b5f.svg",
-    "main.096dc699.js.map": "/Portfolio_Dev/static/js/main.096dc699.js.map"
+    "main.2cd43f33.js.map": "/Portfolio_Dev/static/js/main.2cd43f33.js.map"
   },
   "entrypoints": [
-    "static/js/main.096dc699.js"
+    "static/js/main.2cd43f33.js"
   ]
 }
