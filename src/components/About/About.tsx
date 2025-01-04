@@ -12,6 +12,8 @@ import perfil from "../../assets/foto.png"
 import githubIcon from "../../assets/github-icon.svg";
 import pythonIcon from "../../assets/python.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import NextIcon from "../../assets/next-icon.svg";
+import TailwindIcon from "../../assets/tailwind-icon.svg";
 
 
 export function About(){
@@ -26,11 +28,15 @@ export function About(){
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000} style={{marginTop: "2rem", marginBottom: "2rem"}}>
 
-          <p>Trabalho em projetos pessoais para desenvolvimento de skills e em projetos voltados para o desenvolvimento de sistemas para controle e auxilio da Pós-graduação em Ciência da Computação da Universidade Federaldo Piauí.</p>
+          <p>Trabalho em projetos pessoais para desenvolvimento de skills, trabalhando como Freelancer já trabalhei em projetos voltados para o desenvolvimento de sistemas para controle e auxilio da Pós-graduação em Ciência da Computação da Universidade Federaldo Piauí.</p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000} style={{marginTop: "2rem", marginBottom: "2rem"}}>
+
+          <p>Atuo como bolsista sendo desenvolvedor Frontend em projetos da Secretaria de Segurança do Piauí(SSP-PI).</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000}>
 
-          <p>Possuo sólidos conhecimentos principalmente em programação web,utilizando boas práticas de desenvolvimento. Estou interessado em escalabilidade de aplicações, infraestrutura, melhores práticas de desenvolvimento, TDD e BDD.</p>
+          <p>Possuo sólidos conhecimentos principalmente em programação web e estou buscando me aperfeiçoar também em programação mobile,sempre utilizando boas práticas de desenvolvimento. </p>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
@@ -41,6 +47,12 @@ export function About(){
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
               <img src={reactIcon} alt="React" />
+            </ScrollAnimation>
+          </div>
+
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
+              <img src={NextIcon} alt="React" />
             </ScrollAnimation>
           </div>
 
@@ -67,6 +79,13 @@ export function About(){
             <img src={cssIcon} alt="Css" />
           </ScrollAnimation>
           </div>
+
+          <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.5 * 1000}> 
+            <img src={TailwindIcon} alt="Css" />
+          </ScrollAnimation>
+          </div>
+
           <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}> 
             <img src={nodeIcon} alt="Node" />
