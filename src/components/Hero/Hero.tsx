@@ -19,7 +19,7 @@ export function Hero(){
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume">
-            Construo aplicações web de ponta a ponta e integro IA em produtos reais — do front e da experiência do usuário ao back-end, dados e cloud.
+            Construo aplicações web e mobile de ponta a ponta e integro IA em produtos reais — do front e da experiência do usuário ao back-end, dados e cloud.
           </p>
         </ScrollAnimation>
 
