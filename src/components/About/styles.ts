@@ -57,12 +57,10 @@ export const Container = styled.section`
    img{
      margin-top: 2rem;
      width: 70%;
-     filter: grayscale(1);
-     transition: filter 0.5s;
+     max-width: 42rem;
+     object-fit: cover;
+     aspect-ratio: 3 / 4;
      border-radius: 15%;
-     &:hover{
-       filter: grayscale(0);
-     }
    }
   }
 

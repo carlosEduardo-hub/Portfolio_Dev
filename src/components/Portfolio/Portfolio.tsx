@@ -45,19 +45,21 @@ export function Portfolio() {
               />
             </a>
           </div>
-          <div className="featured-content">
-            <h3>{featuredSoul.title}</h3>
-            <p>{featuredSoul.description}</p>
-            <ul className="featured-highlights">
-              {featuredSoul.highlights.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <ul className="tech-list">
-              {featuredSoul.tech.map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
+          <div className="featured-body">
+            <div className="featured-content">
+              <h3>{featuredSoul.title}</h3>
+              <p>{featuredSoul.description}</p>
+              <ul className="featured-highlights">
+                {featuredSoul.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <ul className="tech-list">
+                {featuredSoul.tech.map((tech) => (
+                  <li key={tech}>{tech}</li>
+                ))}
+              </ul>
+            </div>
             <a
               className="button featured-cta"
               href={featuredSoul.live}

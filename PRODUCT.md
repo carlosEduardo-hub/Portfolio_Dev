@@ -37,7 +37,7 @@ Página única em português (pt-BR) com âncoras Home, Sobre, Portfólio e Cont
 
 ## Evidence on Hand
 
-- Foto de perfil: `src/assets/foto.png`
+- Foto de perfil: `src/assets/foto.jpg`
 - Ilustração do hero: `src/assets/image.png`
 - CV atual: `src/assets/Curriculo_Carlos_Eduardo.pdf`
 - Preview Soul: `src/assets/soul-preview.png` · live `https://soul.luminacodeltda.com.br/`
