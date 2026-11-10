@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_Dev/static/css/main.739d8fec.css",
-    "main.js": "/Portfolio_Dev/static/js/main.446214cd.js",
+    "main.js": "/Portfolio_Dev/static/js/main.cbcf5897.js",
     "static/media/image.png": "/Portfolio_Dev/static/media/image.7a7e0fa2307b21f005ac.png",
     "static/media/Curriculo_Carlos_Eduardo.pdf": "/Portfolio_Dev/static/media/Curriculo_Carlos_Eduardo.25f70349bc93086261c8.pdf",
     "static/media/foto.jpg": "/Portfolio_Dev/static/media/foto.204fca3b8ae6a94a09b2.jpg",
@@ -36,10 +36,10 @@
     "static/media/expo-icon.svg": "/Portfolio_Dev/static/media/expo-icon.2c3f9a1ec4bf0230ef1f4f06212b1fec.svg",
     "static/media/external-link-icon.svg": "/Portfolio_Dev/static/media/external-link-icon.97075d22dfb22a8c8d253b264e892b5f.svg",
     "main.739d8fec.css.map": "/Portfolio_Dev/static/css/main.739d8fec.css.map",
-    "main.446214cd.js.map": "/Portfolio_Dev/static/js/main.446214cd.js.map"
+    "main.cbcf5897.js.map": "/Portfolio_Dev/static/js/main.cbcf5897.js.map"
   },
   "entrypoints": [
     "static/css/main.739d8fec.css",
-    "static/js/main.446214cd.js"
+    "static/js/main.cbcf5897.js"
   ]
 }
