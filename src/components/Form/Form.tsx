@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+import { toast } from "sonner";
 import { Container } from "./styles";
 
 const CONTACT_EMAIL = "carloseduardo010616@gmail.com";
@@ -7,8 +8,6 @@ const FORMSUBMIT_URL = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 const WHATSAPP_URL =
   "https://api.whatsapp.com/send/?phone=5586988778431&type=phone_number&text=" +
   encodeURIComponent("Olá, Carlos! Vim pelo portfólio e gostaria de conversar.");
-
-type SubmitStatus = "idle" | "submitting" | "succeeded" | "activation" | "error";
 
 type FormSubmitResponse = {
   success?: string | boolean;
@@ -21,49 +20,11 @@ function isSuccessful(result: FormSubmitResponse | null) {
 }
 
 export function Form() {
-  const [status, setStatus] = useState<SubmitStatus>("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  if (status === "succeeded") {
-    return (
-      <Container>
-        <h2>Mensagem enviada</h2>
-        <p className="form-feedback success">
-          Obrigado pelo contato! Vou responder no e-mail informado o mais breve possível.
-        </p>
-        <p className="whatsapp-alt">
-          Preferir falar agora?{" "}
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-            Abrir WhatsApp
-          </a>
-        </p>
-      </Container>
-    );
-  }
-
-  if (status === "activation") {
-    return (
-      <Container>
-        <h2>Ative o formulário</h2>
-        <p className="form-feedback success">
-          Enviamos um e-mail de ativação para {CONTACT_EMAIL}. Abra a caixa de entrada,
-          clique em <strong>Activate Form</strong> e depois envie de novo por aqui.
-        </p>
-        <p className="whatsapp-alt">
-          Enquanto isso, você pode{" "}
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-            falar no WhatsApp
-          </a>
-          .
-        </p>
-      </Container>
-    );
-  }
+  const [submitting, setSubmitting] = useState(false);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setStatus("submitting");
-    setErrorMessage("");
+    setSubmitting(true);
 
     const form = event.currentTarget;
     const data = new FormData(form);
@@ -81,22 +42,29 @@ export function Form() {
 
       if (isSuccessful(result)) {
         form.reset();
-        setStatus("succeeded");
+        toast.success("Mensagem enviada", {
+          description:
+            "Obrigado pelo contato! Vou responder no e-mail informado o mais breve possível.",
+        });
         return;
       }
 
       const message = result?.message || "";
       if (/activation/i.test(message)) {
-        setStatus("activation");
+        toast.message("Ative o formulário", {
+          description: `Enviamos um e-mail de ativação para ${CONTACT_EMAIL}. Clique em Activate Form e envie de novo.`,
+          duration: 10000,
+        });
         return;
       }
 
       throw new Error(message || "Falha no envio");
     } catch {
-      setStatus("error");
-      setErrorMessage(
-        "Não foi possível enviar agora. Confira os campos ou tente novamente em instantes."
-      );
+      toast.error("Não foi possível enviar", {
+        description: "Confira os campos ou tente novamente em instantes.",
+      });
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -151,14 +119,8 @@ export function Form() {
           autoComplete="off"
         />
 
-        {status === "error" && (
-          <p className="form-feedback error" role="alert">
-            {errorMessage}
-          </p>
-        )}
-
-        <button type="submit" disabled={status === "submitting"}>
-          {status === "submitting" ? "Enviando..." : "Enviar"}
+        <button type="submit" disabled={submitting}>
+          {submitting ? "Enviando..." : "Enviar"}
         </button>
       </form>
 

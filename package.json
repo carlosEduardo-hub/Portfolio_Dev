@@ -9,18 +9,18 @@
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
     "gh-pages": "^6.1.1",
-    "react": "^17.0.2",
+    "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^17.0.2",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.2.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.37.5",
+    "sonner": "^2.0.8",
     "styled-components": "^5.3.3",
-    "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -52,6 +52,8 @@
   "devDependencies": {
     "@types/react-animate-on-scroll": "^2.1.5",
     "@types/react-router-hash-link": "^2.4.4",
-    "@types/styled-components": "^5.1.18"
+    "@types/styled-components": "^5.1.18",
+    "ajv": "^8.20.0",
+    "typescript": "~5.9.0"
   }
 }
