@@ -1,22 +1,28 @@
 import styled from "styled-components";
 
-
 export const Container = styled.section`
   margin-top: 20rem;
+  width: 100%;
 
-  header{
+  header {
     text-align: center;
-    h2{
+    padding: 0 1rem;
+
+    h2 {
       text-align: center;
       font-size: 4rem;
+      line-height: 1.2;
     }
-    p{
+    p {
       color: var(--green);
       font-weight: 500;
+      max-width: 52ch;
+      margin: 1.2rem auto 0;
+      line-height: 1.5;
     }
   }
 
-  .contacts{
+  .contacts {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -24,7 +30,7 @@ export const Container = styled.section`
     gap: 2rem;
     margin-top: 8rem;
 
-    div{
+    div {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -37,12 +43,12 @@ export const Container = styled.section`
       transition: background-color 0.25s;
       min-height: 44px;
 
-      img{
+      img {
         width: 3.6rem;
         flex-shrink: 0;
         filter: brightness(0);
       }
-      a{
+      a {
         color: var(--black);
         font-weight: 500;
         min-width: 0;
@@ -51,26 +57,74 @@ export const Container = styled.section`
         line-height: 1.35;
         text-align: left;
       }
-      &:hover{
+      &:hover {
         background-color: var(--pink);
-        a{
-          color: #FFF;
+        a {
+          color: #fff;
         }
       }
     }
   }
 
+  @media (max-width: 960px) {
+    margin-top: 12rem;
 
-  @media(max-width: 960px){
-    .contacts{
+    header {
+      h2 {
+        font-size: 3.2rem;
+      }
+    }
+
+    .contacts {
       flex-direction: column;
-      align-items: center;
-      div{
+      align-items: stretch;
+      margin-top: 4rem;
+      gap: 1.2rem;
+
+      div {
         width: 100%;
         max-width: 100%;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1.4rem 1.6rem;
+
+        a {
+          font-size: 1.5rem;
+        }
       }
     }
   }
-  
-`
+
+  @media (max-width: 600px) {
+    margin-top: 8rem;
+
+    header {
+      padding: 0;
+
+      h2 {
+        font-size: 2.6rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .contacts {
+      margin-top: 3rem;
+
+      div {
+        gap: 1.2rem;
+        padding: 1.2rem 1.4rem;
+
+        img {
+          width: 2.8rem;
+        }
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+`;
