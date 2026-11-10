@@ -18,9 +18,11 @@ import nestjsIcon from "../../assets/nestjs-icon.svg";
 import awsIcon from "../../assets/amazonaws-icon.svg";
 import pythonIcon from "../../assets/python.svg";
 import vscodeIcon from "../../assets/vscode-icon.svg";
+import expoIcon from "../../assets/expo-icon.svg";
 
 const skills = [
   { src: reactIcon, alt: "React" },
+  { src: expoIcon, alt: "React Native / Expo" },
   { src: NextIcon, alt: "Next.js" },
   { src: typescriptIcon, alt: "TypeScript" },
   { src: jsIcon, alt: "JavaScript" },

@@ -23,6 +23,7 @@ export const Container = styled.section`
   .featured-preview {
     width: 100%;
     background: #121212;
+    overflow: hidden;
 
     a {
       display: block;
@@ -36,11 +37,12 @@ export const Container = styled.section`
       height: auto;
       object-fit: contain;
       object-position: center;
-      transition: opacity 0.25s;
+      transition: transform 0.35s ease;
+      transform-origin: center;
     }
 
     a:hover img {
-      opacity: 0.92;
+      transform: scale(1.03);
     }
 
     a:focus-visible {
