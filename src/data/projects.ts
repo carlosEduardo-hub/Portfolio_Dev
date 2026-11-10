@@ -15,6 +15,12 @@ export type FeaturedProject = {
   tech: string[];
   live: string;
   ctaLabel: string;
+  theme: "soul" | "fapepi";
+  previewEyebrow: string;
+  previewTitle: string;
+  previewTitleAccent: string;
+  previewCopy: string;
+  previewCta: string;
 };
 
 export const featuredSoul: FeaturedProject = {
@@ -29,7 +35,39 @@ export const featuredSoul: FeaturedProject = {
   tech: ["React", "Next.js", "TypeScript", "Node.js", "IA / LLMs", "Cloud"],
   live: "https://soul.luminacodeltda.com.br/",
   ctaLabel: "Acessar Soul",
+  theme: "soul",
+  previewEyebrow: "Soul te vê. Soul te conhece.",
+  previewTitle: "Você estuda muito e ainda",
+  previewTitleAccent: "se sente perdido.",
+  previewCopy: "Plataforma de estudos com IA.",
+  previewCta: "Abrir Soul →",
 };
+
+export const featuredFapepiDados: FeaturedProject = {
+  title: "Dados FAPEPI",
+  description:
+    "Sistema público da Fundação de Amparo à Pesquisa do Piauí para visualização e análise de dados de programas e atividades da FAPEPI em municípios, territórios de desenvolvimento e macroregiões do estado — acesso aberto para a sociedade.",
+  highlights: [
+    "Plataforma pública de dados abertos com recortes regionais do Piauí",
+    "Fluxos ETL com Airflow para integrar e processar os dados da Fundação",
+    "Frontend Next.js + TanStack Query e backend Fastify com PostgreSQL em Docker",
+  ],
+  tech: ["Next.js", "TanStack Query", "Fastify", "PostgreSQL", "Docker", "Airflow"],
+  live: "https://dados.fapepi.pi.gov.br/",
+  ctaLabel: "Acessar Dados FAPEPI",
+  theme: "fapepi",
+  previewEyebrow: "Sistema público · acesso aberto",
+  previewTitle: "Dados da FAPEPI para",
+  previewTitleAccent: "todo o Piauí.",
+  previewCopy:
+    "Visualização e análise pública de programas e atividades por município, território e macroregião.",
+  previewCta: "Abrir Dados FAPEPI →",
+};
+
+export const featuredProjects: FeaturedProject[] = [
+  featuredSoul,
+  featuredFapepiDados,
+];
 
 export const projects: Project[] = [
   {

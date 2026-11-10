@@ -2,9 +2,7 @@ import { Container } from "./styles";
 import githubIcon from "../../assets/github-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { featuredSoul, projects } from "../../data/projects";
-
-const soulHost = new URL(featuredSoul.live).host;
+import { featuredProjects, projects } from "../../data/projects";
 
 function FolderIcon() {
   return (
@@ -31,65 +29,77 @@ export function Portfolio() {
     <Container id="portfolio">
       <h2>Meu portfólio</h2>
 
-      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <article className="featured">
-          <div className="featured-preview">
-            <a
-              className="live-preview"
-              href={featuredSoul.live}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`${featuredSoul.ctaLabel} — abrir site ao vivo`}
-            >
-              <div className="live-preview__chrome" aria-hidden="true">
-                <span className="live-preview__dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="live-preview__url">{soulHost}</span>
+      {featuredProjects.map((featured) => {
+        const host = new URL(featured.live).host;
+
+        return (
+          <AnimationOnScroll
+            animateIn="animate__fadeInUp"
+            animateOnce
+            key={featured.title}
+          >
+            <article className={`featured featured--${featured.theme}`}>
+              <div className="featured-preview">
+                <a
+                  className={`live-preview live-preview--${featured.theme}`}
+                  href={featured.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${featured.ctaLabel} — abrir site ao vivo`}
+                >
+                  <div className="live-preview__chrome" aria-hidden="true">
+                    <span className="live-preview__dots">
+                      <i />
+                      <i />
+                      <i />
+                    </span>
+                    <span className="live-preview__url">{host}</span>
+                  </div>
+                  <div className="live-preview__stage">
+                    <div className="live-preview__scene">
+                      <p className="live-preview__eyebrow">
+                        {featured.previewEyebrow}
+                      </p>
+                      <h4>
+                        {featured.previewTitle}{" "}
+                        <span>{featured.previewTitleAccent}</span>
+                      </h4>
+                      <p className="live-preview__copy">{featured.previewCopy}</p>
+                      <span className="live-preview__pill">
+                        {featured.previewCta}
+                      </span>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <div className="live-preview__stage">
-                <div className="live-preview__scene">
-                  <p className="live-preview__eyebrow">Soul te vê. Soul te conhece.</p>
-                  <h4>
-                    Você estuda muito e ainda{" "}
-                    <span>se sente perdido.</span>
-                  </h4>
-                  <p className="live-preview__copy">
-                    Plataforma de estudos com IA.
-                  </p>
-                  <span className="live-preview__pill">Abrir Soul →</span>
+              <div className="featured-body">
+                <div className="featured-content">
+                  <h3>{featured.title}</h3>
+                  <p>{featured.description}</p>
+                  <ul className="featured-highlights">
+                    {featured.highlights.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                  <ul className="tech-list">
+                    {featured.tech.map((tech) => (
+                      <li key={tech}>{tech}</li>
+                    ))}
+                  </ul>
                 </div>
+                <a
+                  className="button featured-cta"
+                  href={featured.live}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {featured.ctaLabel}
+                </a>
               </div>
-            </a>
-          </div>
-          <div className="featured-body">
-            <div className="featured-content">
-              <h3>{featuredSoul.title}</h3>
-              <p>{featuredSoul.description}</p>
-              <ul className="featured-highlights">
-                {featuredSoul.highlights.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <ul className="tech-list">
-                {featuredSoul.tech.map((tech) => (
-                  <li key={tech}>{tech}</li>
-                ))}
-              </ul>
-            </div>
-            <a
-              className="button featured-cta"
-              href={featuredSoul.live}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {featuredSoul.ctaLabel}
-            </a>
-          </div>
-        </article>
-      </AnimationOnScroll>
+            </article>
+          </AnimationOnScroll>
+        );
+      })}
 
       <div className="projects">
         {projects.map((project) => (

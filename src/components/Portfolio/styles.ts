@@ -101,10 +101,20 @@ export const Container = styled.section`
     position: relative;
     min-height: 28rem;
     padding: 3.2rem 2.4rem;
+  }
+
+  .live-preview--soul .live-preview__stage {
     background:
       radial-gradient(ellipse 70% 60% at 75% 40%, rgba(124, 58, 237, 0.35), transparent 60%),
       radial-gradient(ellipse 50% 45% at 20% 80%, rgba(219, 39, 119, 0.2), transparent 55%),
       linear-gradient(160deg, #09090f 0%, #15101f 55%, #0b0b12 100%);
+  }
+
+  .live-preview--fapepi .live-preview__stage {
+    background:
+      radial-gradient(ellipse 70% 55% at 80% 35%, rgba(1, 111, 185, 0.38), transparent 60%),
+      radial-gradient(ellipse 45% 40% at 15% 75%, rgba(35, 206, 107, 0.18), transparent 55%),
+      linear-gradient(160deg, #071018 0%, #0d1c28 55%, #0a1218 100%);
   }
 
   .live-preview__scene {
@@ -116,14 +126,21 @@ export const Container = styled.section`
       line-height: 1.15;
       font-weight: 700;
       color: #fff;
-
-      span {
-        background: linear-gradient(90deg, #a78bfa, #f472b6);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
     }
+  }
+
+  .live-preview--soul .live-preview__scene h4 span {
+    background: linear-gradient(90deg, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .live-preview--fapepi .live-preview__scene h4 span {
+    background: linear-gradient(90deg, #38bdf8, #23ce6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .live-preview__eyebrow {
@@ -133,14 +150,23 @@ export const Container = styled.section`
     border-radius: 999px;
     font-size: 1.2rem;
     letter-spacing: 0.02em;
+  }
+
+  .live-preview--soul .live-preview__eyebrow {
     color: #c4b5fd;
     background: rgba(124, 58, 237, 0.18);
     border: 1px solid rgba(167, 139, 250, 0.35);
   }
 
+  .live-preview--fapepi .live-preview__eyebrow {
+    color: #7dd3fc;
+    background: rgba(1, 111, 185, 0.22);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+  }
+
   .live-preview__copy {
     margin: 0 0 2rem;
-    max-width: 42ch;
+    max-width: 48ch;
     font-size: 1.5rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.78);
@@ -156,7 +182,14 @@ export const Container = styled.section`
     font-size: 1.4rem;
     font-weight: 600;
     color: #fff;
+  }
+
+  .live-preview--soul .live-preview__pill {
     background: linear-gradient(90deg, #7c3aed, #db2777);
+  }
+
+  .live-preview--fapepi .live-preview__pill {
+    background: linear-gradient(90deg, #016fb9, #23ce6b);
   }
 
   .featured-body {
