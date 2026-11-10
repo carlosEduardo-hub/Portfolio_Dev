@@ -1,7 +1,7 @@
 import { Container } from "./styles";
 import githubIcon from "../../assets/github-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
-import ScrollAnimation from "react-animate-on-scroll";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import soulPreview from "../../assets/soul-preview.png";
 import { featuredSoul, projects } from "../../data/projects";
 
@@ -30,7 +30,7 @@ export function Portfolio() {
     <Container id="portfolio">
       <h2>Meu portfólio</h2>
 
-      <ScrollAnimation animateIn="fadeInUp">
+      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <article className="featured">
           <div className="featured-preview">
             <a
@@ -70,11 +70,11 @@ export function Portfolio() {
             </a>
           </div>
         </article>
-      </ScrollAnimation>
+      </AnimationOnScroll>
 
       <div className="projects">
         {projects.map((project) => (
-          <ScrollAnimation animateIn="flipInX" key={project.title}>
+          <AnimationOnScroll animateIn="animate__flipInX" key={project.title} animateOnce>
             <div className="project">
               <header>
                 <FolderIcon />
@@ -127,7 +127,7 @@ export function Portfolio() {
                 </ul>
               </footer>
             </div>
-          </ScrollAnimation>
+          </AnimationOnScroll>
         ))}
       </div>
     </Container>

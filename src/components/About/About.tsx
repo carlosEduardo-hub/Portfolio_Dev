@@ -9,7 +9,7 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import gitIcon from "../../assets/git-icon.svg";
 import perfil from "../../assets/foto.jpg";
 import githubIcon from "../../assets/github-icon.svg";
-import ScrollAnimation from "react-animate-on-scroll";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import NextIcon from "../../assets/next-icon.svg";
 import TailwindIcon from "../../assets/tailwind-icon.svg";
 import dockerIcon from "../../assets/docker-icon.svg";
@@ -44,58 +44,64 @@ export function About() {
   return (
     <Container id="sobre">
       <div className="about-text">
-        <ScrollAnimation animateIn="fadeInLeft">
+        <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce>
           <h2>Sobre mim</h2>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__fadeInLeft" delay={200} animateOnce>
           <p>
             Me chamo Carlos Eduardo, sou desenvolvedor Full-Stack com experiência em aplicações web de ponta a ponta e integração de IA — React, Next.js, TypeScript, Node.js, APIs REST, PostgreSQL e cloud.
           </p>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateIn="fadeInLeft"
-          delay={0.4 * 1000}
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn="animate__fadeInLeft"
+          delay={400}
+          animateOnce
           style={{ marginTop: "2rem", marginBottom: "2rem" }}
         >
           <p>
             Na Secretaria de Segurança do Piauí (SSP-PI), atuei como Full-Stack em dashboards de análise, sistema de Boletim de Ocorrência com IA (transcrição e preenchimento automático), backend Fastify com Clean Architecture, Docker, testes com Vitest e automações de PDF/e-mail.
           </p>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateIn="fadeInLeft"
-          delay={0.5 * 1000}
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn="animate__fadeInLeft"
+          delay={500}
+          animateOnce
           style={{ marginTop: "2rem", marginBottom: "2rem" }}
         >
           <p>
             Na FAPEPI, desenvolvo plataforma pública de visualização de dados com Next.js, TanStack Query, Fastify, PostgreSQL em Docker e fluxos ETL com Airflow.
           </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000}>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__fadeInLeft" delay={600} animateOnce>
           <p>
             Sou cofundador e desenvolvedor do SaaS Soul, plataforma de estudos com IA — arquitetura full-stack, autenticação, pagamentos, infraestrutura, analytics, LGPD e funcionalidades baseadas em IA. Também entreguei sistemas para a Pós-graduação em Ciência da Computação da UFPI. Formação: Ciência da Computação (UFPI).
           </p>
-        </ScrollAnimation>
+        </AnimationOnScroll>
 
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
+        <AnimationOnScroll animateIn="animate__fadeInLeft" delay={700} animateOnce>
           <h3>Aqui estão as minhas principais habilidades:</h3>
-        </ScrollAnimation>
+        </AnimationOnScroll>
         <p className="skills-note">
           Também trabalho com React Native, Expo, Fastify, Drizzle ORM, Nginx, Vitest/Jest, SDKs de IA/LLMs e n8n.
         </p>
         <div className="hard-skills">
           {skills.map((skill, index) => (
             <div className="hability" key={skill.alt}>
-              <ScrollAnimation animateIn="fadeInUp" delay={(0.1 + index * 0.05) * 1000}>
+              <AnimationOnScroll
+                animateIn="animate__fadeInUp"
+                delay={(0.1 + index * 0.05) * 1000}
+                animateOnce
+              >
                 <img src={skill.src} alt={skill.alt} title={skill.alt} />
-              </ScrollAnimation>
+              </AnimationOnScroll>
             </div>
           ))}
         </div>
       </div>
       <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
+        <AnimationOnScroll animateIn="animate__fadeInRight" delay={600} animateOnce>
           <img src={perfil} alt="Foto de perfil de Carlos Eduardo" />
-        </ScrollAnimation>
+        </AnimationOnScroll>
       </div>
     </Container>
   );

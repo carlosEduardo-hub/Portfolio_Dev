@@ -1,6 +1,5 @@
 import { Container } from "./styles";
-import { BrowserRouter as Router } from "react-router-dom";
-import { NavHashLink, HashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
 import Curriculo from "../../assets/Curriculo_Carlos_Eduardo.pdf";
@@ -19,51 +18,49 @@ export function Header() {
 
   return (
     <Container className="header-fixed">
-      <Router>
-        <HashLink smooth to="#home" className="logo">
-          <span className="first-letter">C</span>
-          <span>arlos</span>
-          <span className="second-letter">E</span>
-          <span>duardo</span>
+      <HashLink smooth to="#home" className="logo">
+        <span className="first-letter">C</span>
+        <span>arlos</span>
+        <span className="second-letter">E</span>
+        <span>duardo</span>
+      </HashLink>
+
+      <input
+        onChange={toggleTheme}
+        className="container_toggle"
+        type="checkbox"
+        id="switch"
+        name="mode"
+      />
+      <label htmlFor="switch">Toggle</label>
+
+      <nav className={isActive ? "active" : ""}>
+        <HashLink smooth to="#home" onClick={closeMenu}>
+          Home
         </HashLink>
+        <HashLink smooth to="#sobre" onClick={closeMenu}>
+          Sobre mim
+        </HashLink>
+        <HashLink smooth to="#portfolio" onClick={closeMenu}>
+          Portfólio
+        </HashLink>
+        <HashLink smooth to="#contato" onClick={closeMenu}>
+          Contato
+        </HashLink>
+        <a href={Curriculo} download className="button">
+          CV
+        </a>
+      </nav>
 
-        <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        />
-        <label htmlFor="switch">Toggle</label>
-
-        <nav className={isActive ? "active" : ""}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
-            Home
-          </NavHashLink>
-          <NavHashLink smooth to="#sobre" onClick={closeMenu}>
-            Sobre mim
-          </NavHashLink>
-          <NavHashLink smooth to="#portfolio" onClick={closeMenu}>
-            Portfólio
-          </NavHashLink>
-          <NavHashLink smooth to="#contato" onClick={closeMenu}>
-            Contato
-          </NavHashLink>
-          <a href={Curriculo} download className="button">
-            CV
-          </a>
-        </nav>
-
-        <div
-          aria-expanded={isActive ? "true" : "false"}
-          aria-haspopup="true"
-          aria-label={isActive ? "Fechar menu" : "Abrir menu"}
-          className={isActive ? "menu active" : "menu"}
-          onClick={() => {
-            setActive(!isActive);
-          }}
-        ></div>
-      </Router>
+      <div
+        aria-expanded={isActive ? "true" : "false"}
+        aria-haspopup="true"
+        aria-label={isActive ? "Fechar menu" : "Abrir menu"}
+        className={isActive ? "menu active" : "menu"}
+        onClick={() => {
+          setActive(!isActive);
+        }}
+      ></div>
     </Container>
   );
 }

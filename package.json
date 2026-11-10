@@ -11,9 +11,10 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
+    "animate.css": "^4.1.1",
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
-    "react-animate-on-scroll": "^2.1.5",
+    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.2.1",
     "react-router-hash-link": "^2.4.3",
@@ -50,7 +51,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react-animate-on-scroll": "^2.1.5",
     "@types/react-router-hash-link": "^2.4.4",
     "@types/styled-components": "^5.1.18",
     "ajv": "^8.20.0",
