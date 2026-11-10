@@ -24,31 +24,139 @@ export const Container = styled.section`
     width: 100%;
     background: #121212;
     overflow: hidden;
+    padding: 1.6rem;
+  }
 
-    a {
-      display: block;
-      width: 100%;
-      min-height: 44px;
+  .live-preview {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #0b0b0f;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+      border-color: rgba(35, 206, 107, 0.55);
+      transform: translateY(-2px);
     }
 
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      object-position: center;
-      transition: transform 0.35s ease;
-      transform-origin: center;
-    }
-
-    a:hover img {
-      transform: scale(1.03);
-    }
-
-    a:focus-visible {
+    &:focus-visible {
       outline: 2px solid var(--green);
-      outline-offset: -2px;
+      outline-offset: 3px;
     }
+  }
+
+  .live-preview__chrome {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.9rem 1.2rem;
+    background: #17171c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .live-preview__dots {
+    display: inline-flex;
+    gap: 0.45rem;
+    flex-shrink: 0;
+
+    i {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background: #3a3a42;
+      display: block;
+
+      &:nth-child(1) {
+        background: #ff5f57;
+      }
+      &:nth-child(2) {
+        background: #febc2e;
+      }
+      &:nth-child(3) {
+        background: #28c840;
+      }
+    }
+  }
+
+  .live-preview__url {
+    flex: 1;
+    min-width: 0;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    background: #0f0f14;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .live-preview__stage {
+    position: relative;
+    min-height: 28rem;
+    padding: 3.2rem 2.4rem;
+    background:
+      radial-gradient(ellipse 70% 60% at 75% 40%, rgba(124, 58, 237, 0.35), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 20% 80%, rgba(219, 39, 119, 0.2), transparent 55%),
+      linear-gradient(160deg, #09090f 0%, #15101f 55%, #0b0b12 100%);
+  }
+
+  .live-preview__scene {
+    max-width: 54rem;
+
+    h4 {
+      margin: 1.2rem 0 1.4rem;
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      line-height: 1.15;
+      font-weight: 700;
+      color: #fff;
+
+      span {
+        background: linear-gradient(90deg, #a78bfa, #f472b6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+  .live-preview__eyebrow {
+    display: inline-flex;
+    margin: 0;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
+    color: #c4b5fd;
+    background: rgba(124, 58, 237, 0.18);
+    border: 1px solid rgba(167, 139, 250, 0.35);
+  }
+
+  .live-preview__copy {
+    margin: 0 0 2rem;
+    max-width: 42ch;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .live-preview__pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.9rem 1.8rem;
+    border-radius: 999px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #7c3aed, #db2777);
   }
 
   .featured-body {
@@ -237,6 +345,19 @@ export const Container = styled.section`
       margin-bottom: 4rem;
     }
 
+    .featured-preview {
+      padding: 1rem;
+    }
+
+    .live-preview__stage {
+      min-height: 22rem;
+      padding: 2.4rem 1.6rem;
+    }
+
+    .live-preview__copy {
+      font-size: 1.4rem;
+    }
+
     .featured-body {
       padding: 1.6rem;
       gap: 1.8rem;
@@ -251,5 +372,14 @@ export const Container = styled.section`
     .featured-cta {
       width: 100%;
     }
+
+    .live-preview__url {
+      font-size: 1.2rem;
+    }
+
+    .live-preview__pill {
+      width: 100%;
+    }
   }
 `;
+

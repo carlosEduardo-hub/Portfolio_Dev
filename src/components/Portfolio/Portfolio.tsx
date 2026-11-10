@@ -2,8 +2,9 @@ import { Container } from "./styles";
 import githubIcon from "../../assets/github-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import soulPreview from "../../assets/soul-preview.png";
 import { featuredSoul, projects } from "../../data/projects";
+
+const soulHost = new URL(featuredSoul.live).host;
 
 function FolderIcon() {
   return (
@@ -34,15 +35,33 @@ export function Portfolio() {
         <article className="featured">
           <div className="featured-preview">
             <a
+              className="live-preview"
               href={featuredSoul.live}
               target="_blank"
               rel="noreferrer"
-              aria-label={`${featuredSoul.ctaLabel} (abre em nova aba)`}
+              aria-label={`${featuredSoul.ctaLabel} — abrir site ao vivo`}
             >
-              <img
-                src={soulPreview}
-                alt={`Preview da plataforma ${featuredSoul.title}`}
-              />
+              <div className="live-preview__chrome" aria-hidden="true">
+                <span className="live-preview__dots">
+                  <i />
+                  <i />
+                  <i />
+                </span>
+                <span className="live-preview__url">{soulHost}</span>
+              </div>
+              <div className="live-preview__stage">
+                <div className="live-preview__scene">
+                  <p className="live-preview__eyebrow">Soul te vê. Soul te conhece.</p>
+                  <h4>
+                    Você estuda muito e ainda{" "}
+                    <span>se sente perdido.</span>
+                  </h4>
+                  <p className="live-preview__copy">
+                    Plataforma de estudos com IA.
+                  </p>
+                  <span className="live-preview__pill">Abrir Soul →</span>
+                </div>
+              </div>
             </a>
           </div>
           <div className="featured-body">
