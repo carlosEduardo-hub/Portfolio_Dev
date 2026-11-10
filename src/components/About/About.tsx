@@ -80,7 +80,7 @@ export function About() {
           <h3>Aqui estão as minhas principais habilidades:</h3>
         </ScrollAnimation>
         <p className="skills-note">
-          Também trabalho com Fastify, Drizzle ORM, Nginx, Vitest/Jest, SDKs de IA/LLMs e n8n.
+          Também trabalho com React Native, Expo, Fastify, Drizzle ORM, Nginx, Vitest/Jest, SDKs de IA/LLMs e n8n.
         </p>
         <div className="hard-skills">
           {skills.map((skill, index) => (
