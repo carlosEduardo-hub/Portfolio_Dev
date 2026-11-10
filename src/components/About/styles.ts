@@ -39,6 +39,16 @@ export const Container = styled.section`
     letter-spacing: 0.1rem;
     font-weight: 500;
   }
+
+  .skills-note{
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+    opacity: 0.85;
+    letter-spacing: 0.04rem;
+    font-weight: 400;
+    max-width: 65ch;
+  }
   
   
 

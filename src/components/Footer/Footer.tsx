@@ -16,7 +16,7 @@ export function Footer(){
           <span>duardo</span>
       </a>
       <div>
-        <p>Todos os Direitos Reservados - 2024 © <img src={reactIcon}/></p>
+        <p>Todos os Direitos Reservados - 2026 © <img src={reactIcon} alt="" /></p>
       </div>
 
       <div className="social-media">
