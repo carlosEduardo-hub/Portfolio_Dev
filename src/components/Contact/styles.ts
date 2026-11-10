@@ -18,28 +18,38 @@ export const Container = styled.section`
 
   .contacts{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
-    place-items: center;
     margin-top: 8rem;
+
     div{
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
-      max-width: 40rem;
-      gap: 2rem;
+      flex: 1 1 24rem;
+      max-width: 36rem;
+      gap: 1.6rem;
       background-color: var(--green);
       border-radius: 1.4rem;
-      padding: 1.6rem 2.8rem;
+      padding: 1.6rem 2.4rem;
       transition: background-color 0.25s;
+      min-height: 44px;
+
       img{
-        width: 4rem;
+        width: 3.6rem;
+        flex-shrink: 0;
+        filter: brightness(0);
       }
       a{
         color: var(--black);
         font-weight: 500;
+        min-width: 0;
+        overflow-wrap: break-word;
+        word-break: keep-all;
+        line-height: 1.35;
+        text-align: left;
       }
       &:hover{
         background-color: var(--pink);
@@ -54,8 +64,10 @@ export const Container = styled.section`
   @media(max-width: 960px){
     .contacts{
       flex-direction: column;
+      align-items: center;
       div{
         width: 100%;
+        max-width: 100%;
         flex-direction: column;
       }
     }
