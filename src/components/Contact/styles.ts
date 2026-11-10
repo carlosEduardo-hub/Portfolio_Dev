@@ -24,7 +24,7 @@ export const Container = styled.section`
 
   .contacts {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -39,12 +39,15 @@ export const Container = styled.section`
       gap: 1.6rem;
       background-color: var(--green);
       border-radius: 1.4rem;
-      padding: 1.6rem 2.4rem;
+      padding: 1.2rem 2rem;
       transition: background-color 0.25s;
-      min-height: 44px;
+      min-height: 0;
+      height: auto;
 
       img {
-        width: 3.6rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        object-fit: contain;
         flex-shrink: 0;
         filter: brightness(0);
       }
@@ -79,17 +82,27 @@ export const Container = styled.section`
       flex-direction: column;
       align-items: stretch;
       margin-top: 4rem;
-      gap: 1.2rem;
+      gap: 1rem;
 
       div {
         width: 100%;
         max-width: 100%;
+        flex: 0 0 auto;
         flex-direction: row;
         justify-content: flex-start;
-        padding: 1.4rem 1.6rem;
+        align-items: center;
+        padding: 0.8rem 1.2rem;
+        border-radius: 1rem;
+        min-height: 0;
+
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
 
         a {
           font-size: 1.5rem;
+          line-height: 1.2;
         }
       }
     }
@@ -112,13 +125,15 @@ export const Container = styled.section`
 
     .contacts {
       margin-top: 3rem;
+      gap: 0.8rem;
 
       div {
-        gap: 1.2rem;
-        padding: 1.2rem 1.4rem;
+        gap: 1rem;
+        padding: 0.7rem 1.2rem;
 
         img {
-          width: 2.8rem;
+          width: 2.2rem;
+          height: 2.2rem;
         }
 
         a {
@@ -128,3 +143,4 @@ export const Container = styled.section`
     }
   }
 `;
+
