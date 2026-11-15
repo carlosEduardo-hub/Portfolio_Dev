@@ -117,6 +117,13 @@ export const Container = styled.section`
       linear-gradient(160deg, #071018 0%, #0d1c28 55%, #0a1218 100%);
   }
 
+  .live-preview--bo .live-preview__stage {
+    background:
+      radial-gradient(ellipse 65% 55% at 78% 30%, rgba(217, 119, 6, 0.28), transparent 58%),
+      radial-gradient(ellipse 50% 45% at 18% 78%, rgba(30, 64, 175, 0.3), transparent 55%),
+      linear-gradient(160deg, #0a0e16 0%, #141b2a 55%, #0c1018 100%);
+  }
+
   .live-preview__scene {
     max-width: 54rem;
 
@@ -143,6 +150,13 @@ export const Container = styled.section`
     color: transparent;
   }
 
+  .live-preview--bo .live-preview__scene h4 span {
+    background: linear-gradient(90deg, #fbbf24, #f97316);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   .live-preview__eyebrow {
     display: inline-flex;
     margin: 0;
@@ -162,6 +176,12 @@ export const Container = styled.section`
     color: #7dd3fc;
     background: rgba(1, 111, 185, 0.22);
     border: 1px solid rgba(56, 189, 248, 0.4);
+  }
+
+  .live-preview--bo .live-preview__eyebrow {
+    color: #fcd34d;
+    background: rgba(217, 119, 6, 0.2);
+    border: 1px solid rgba(251, 191, 36, 0.4);
   }
 
   .live-preview__copy {
@@ -190,6 +210,10 @@ export const Container = styled.section`
 
   .live-preview--fapepi .live-preview__pill {
     background: linear-gradient(90deg, #016fb9, #23ce6b);
+  }
+
+  .live-preview--bo .live-preview__pill {
+    background: linear-gradient(90deg, #1e40af, #d97706);
   }
 
   .featured-body {

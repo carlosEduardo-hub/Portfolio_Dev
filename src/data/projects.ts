@@ -15,7 +15,7 @@ export type FeaturedProject = {
   tech: string[];
   live: string;
   ctaLabel: string;
-  theme: "soul" | "fapepi";
+  theme: "soul" | "fapepi" | "bo";
   previewEyebrow: string;
   previewTitle: string;
   previewTitleAccent: string;
@@ -64,9 +64,31 @@ export const featuredFapepiDados: FeaturedProject = {
   previewCta: "Abrir Dados FAPEPI →",
 };
 
+export const featuredRegistroBo: FeaturedProject = {
+  title: "Sistema de Registro de B.O.",
+  description:
+    "Protótipo de referência (sistema base) que desenvolvi no contexto da SSP-PI — não é a aplicação oficial em produção da Secretaria. Demonstra o fluxo full-stack de registro, consulta e gestão de Boletins de Ocorrência com IA (transcrição de áudio e autofill), modo offline com sincronização, auditoria e exportação em PDF.",
+  highlights: [
+    "Base de referência técnica — demonstração própria, sem vínculo com o sistema oficial da SSP-PI",
+    "Registro assistido por IA: gravação de áudio, transcrição (Gemini) e autofill do boletim",
+    "Modo offline com sincronização, auditoria policial, histórico, relatórios e PDF",
+  ],
+  tech: ["React", "Vite", "TypeScript", "Fastify", "Drizzle", "PostgreSQL", "Docker", "IA / Gemini"],
+  live: "https://sistema-registro-bo.vercel.app/",
+  ctaLabel: "Ver demonstração",
+  theme: "bo",
+  previewEyebrow: "Protótipo de referência · SSP-PI",
+  previewTitle: "Base técnica para",
+  previewTitleAccent: "registro de B.O.",
+  previewCopy:
+    "Demonstração própria com IA, offline-first e auditoria — não substitui o sistema oficial.",
+  previewCta: "Abrir demonstração →",
+};
+
 export const featuredProjects: FeaturedProject[] = [
   featuredSoul,
   featuredFapepiDados,
+  featuredRegistroBo,
 ];
 
 export const projects: Project[] = [
